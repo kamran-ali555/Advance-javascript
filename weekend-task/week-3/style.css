@@ -1,0 +1,9 @@
+.active{
+    color: black;
+}
+.hode{
+    display: none;
+}
+#icon-11,#icon-22,#icon-33{
+    display: none;
+}

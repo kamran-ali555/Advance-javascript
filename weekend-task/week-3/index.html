@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs week-3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-3xl bg-white p-8 rounded shadow-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+
+    <div class="space-y-4">
+
+      <div>
+        <button
+        id="1"
+        //id="btn-1"
+         class="btn w-full flex justify-between items-center text-left text-lg font-medium text-gray-500 hover:text-gray-800 focus:outline-none active">
+          <span>What is your return policy?</span>
+          <span id="icon-1" class="text-2xl">+</span>
+          <span id="icon-11" class="text-2xl">-</span>
+        </button>
+        <div 
+        id="answer-1"
+        //id="faq-1"
+         class="mt-2 text-gray-600 hidden hide">
+          We offer a 30-day return policy from the date of purchase. Items must be in original condition.
+        </div>
+      </div>
+      <hr>
+
+      <div>
+        <button 
+         id="2"
+        //id="btn-2"
+        class="btn w-full flex justify-between items-center text-left text-lg font-medium text-gray-500 hover:text-gray-800 focus:outline-none">
+          <span>How long does shipping take?</span>
+          <span id="icon-2" class="text-2xl">+</span>
+          <span id="icon-22" class="text-2xl">-</span>
+        </button>
+        <div 
+        id="answer-2"
+        //id="faq-2"
+         class="mt-2 text-gray-600 hidden hide">
+          Shipping typically takes 5–7 business days, depending on your location.
+        </div>
+      </div>
+      <hr>
+
+      <div>
+        <button 
+        id="3"
+        //id="btn-3"
+         class="btn w-full flex justify-between items-center text-left text-lg font-medium text-gray-500 hover:text-gray-800 focus:outline-none">
+          <span>Do you offer international shipping?</span>
+          <span id="icon-3" class="text-2xl">+</span>
+          <span id="icon-33" class="text-2xl">-</span>
+        </button>
+        <div 
+        id="answer-3"
+        //id="faq-3"
+         class="mt-2 text-gray-600 hidden hide">
+          Yes! We ship internationally to most countries. Shipping rates and delivery times may vary.
+        </div>
+      </div>
+      <hr>
+
+    </div>
+  </div>
+
+<!-- 
+  <script>
+    function toggleFAQ(faqNumber) {
+      const totalFAQs = 3;
+      for (let i = 1; i <= totalFAQs; i++) {
+        const answer = document.getElementById(`faq-${i}`);
+        const icon = document.getElementById(`icon-${i}`);
+
+        if (i === faqNumber) {
+          const isHidden = answer.classList.contains('hidden');
+          
+          // Hide all first
+          for (let j = 1; j <= totalFAQs; j++) {
+            document.getElementById(`faq-${j}`).classList.add('hidden');
+            document.getElementById(`icon-${j}`).textContent = '+';
+          }
+
+          // Toggle selected
+          if (isHidden) {
+            answer.classList.remove('hidden');
+            icon.textContent = '−';
+          }
+        }
+      }
+    }
+  </script> -->
+
+  <script src="./script.js"></script>
+</body>
+</html>

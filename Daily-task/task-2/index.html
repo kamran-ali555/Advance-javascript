@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>daily task two</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- onclick="switchTab('results', this)"   btn mein add kena hain -->
+
+  <div class="flex h-screen">
+    <!-- Sidebar Tabs -->
+    <div class="w-1/4 bg-white shadow-md flex flex-col">
+      <button
+        id="tab-subject"
+        class="tab-btn active  px-4 py-3 text-left text-lg font-semibold  "
+      >
+        Subject
+      </button>
+      <button
+        id="tab-Assignments"
+        class="tab-btn hoverr px-4 py-3 text-left text-lg font-semibold text-gray-700 "
+      >
+      Assignments
+      </button>
+      <button
+        id="tab-Quizzes"
+        class="tab-btn hoverr px-4 py-3 text-left text-lg font-semibold text-gray-700 "
+      >
+      Quizzes
+      </button>
+      <button
+        id="tab-Students"
+        class="tab-btn hoverr  px-4 py-3 text-left text-lg font-semibold text-gray-700 "
+      >
+      Students
+      </button>
+    </div>
+
+    <!-- Content Area -->
+    <div class="w-3/4 p-6 bg-white shadow-inner overflow-auto">
+      <div id="subject-section" class="tab-content h-[100%] flex flex-col justify-center items-center bg-red-100">
+        <h2 class="text-2xl font-bold mb-4">Subject</h2>
+        <p>This is the subject Page.</p>
+      </div>
+      <div id="Assignments-section" class="tab-content hidden h-[100%] flex flex-col justify-center items-center bg-gray-100">
+        <h2 class="text-2xl font-bold mb-4">Assignments</h2>
+        <p>This is the Assignments Page.</p>
+      </div>
+      <div id="Quizzes-section" class="tab-content hidden h-[100%] flex flex-col justify-center items-center bg-green-100">
+        <h2 class="text-2xl font-bold mb-4">Quizzes</h2>
+        <p>This is the Quizzes Page.</p>
+      </div>
+      <div id="Students-section" class="tab-content hidden h-[100%] flex flex-col justify-center items-center bg-blue-100">
+        <h2 class="text-2xl font-bold mb-4">Students</h2>
+        <p>This is the Students Page.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

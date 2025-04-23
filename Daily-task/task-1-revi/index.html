@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="max-w-[1000px] mx-auto mt-20">
+      <div class="flex justify-center items-center gap-12 mb-12">
+        <button
+          class="px-6 py-2 border border-black/40 rounded-[20px] cursor-pointer active button"
+          id="0"
+        >
+          Web developent
+        </button>
+        <button
+          class="px-6 py-2 border border-black/40 rounded-[20px] cursor-pointer button"
+          id="1"
+          
+        >
+          UIUX Designing
+        </button>
+        <button
+          class="px-6 py-2 border border-black/40 rounded-[20px] cursor-pointer button"
+          id="2"
+        >
+          Marketing
+        </button>
+      </div>
+
+      <div
+        class="border border-black/40 h-[500px] w-full rounded-xl flex items-center justify-center font-bold text-2xl text-blue-500 section"
+        id="section-0"
+      >
+        Web Development
+      </div>
+      <div
+        class="border border-black/40 h-[500px] w-full rounded-xl flex items-center justify-center font-bold text-2xl text-green-500 section"
+        style="display: none;"
+        id="section-1"
+      >
+        UIUX Designing
+      </div>
+      <div
+        class="border border-black/40 h-[500px] w-full rounded-xl flex items-center justify-center font-bold text-2xl text-red-500 section"
+        style="display: none;"
+        id="section-2"
+      >
+        Marketing
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
