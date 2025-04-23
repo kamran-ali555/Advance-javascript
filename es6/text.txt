@@ -1,0 +1,12 @@
+es6 modules
+  name export
+  defaulft export
+
+higher order function
+   map
+   reduce
+   filter
+   find
+   every
+
+closures
