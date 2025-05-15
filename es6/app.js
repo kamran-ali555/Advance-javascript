@@ -48,11 +48,36 @@ const userdata = [
 // console.log(uiux, "is expert uiux designer");
 
 
-const reduce =[2,4,5,6,6]
+// const reduce =[2,4,5,6,6]
 
-const result = reduce.map((data)=>{
-    return data + 1;
-})
+// const result = reduce.map((data)=>{
+//     return data + 1;
+// })
 
+// const reduce = Array.reduce((a,b)=> a*b, 10)
+// console.log(result);
 
-console.log(result);
+// console.log(result);
+
+function bankAccount() {
+    let blance = 0;
+    return{
+        addBalnce:(amount)=>{
+            blance =blance + amount;
+        },
+        deducBalnce:(amount)=>{
+            blance = blance - amount;
+        },
+        getBalnce:()=>{
+           return blance;
+        }
+    }
+}
+
+const creatAccount = bankAccount();
+// console.log("before add", creatAccount(getblances()));
+
+// bankAccount(addBalnce(600))
+bankAccount(deducBalnce(100))
+
+// console.log("after add", creatAccount(getBalnce()));
